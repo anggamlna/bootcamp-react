@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+:root {
+  --mainBlack: #000000;
+  --mainWhite: #ffffff;
+  --lightBlack: #343a40;
+  --lightWhite: #f8f9fa;
+  --mainGrey: #6c757d;
+  --yellow: #ffc107;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Lato", sans-serif !important;
+  background: var(--mainWhite) !important;
+  color: var(--mainBlack) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-title {
+  font-family: "Playfair Display", serif !important;
+  letter-spacing: 0.3 rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.text-white {
+  color: var(--lightWhite) !important;
 }
 
-.App-link {
-  color: #61dafb;
+.text-black {
+  color: var(--lightBlack) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-grey {
+  color: var(--mainGrey) !important
+}
+
+.logo-color {
+  color: white !important;
+}
+
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: .8rem !important;
+  color: var(--mainGrey);
+  border: .1rem solid var(--lightBlack) !important;
+}
+
+.btn-black:hover {
+  background: var(--lightBlack);
+  color: var(--mainWhite)
+}
+
+.cart-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainBlack);
 }
